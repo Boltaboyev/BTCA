@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html border border-[#fff] cursor-pointer text-[#fff] active:scale-[.97] select-none="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTCA</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <a href="./js-task/index.html" class="fixed bg-[#fff] h-[40px] w-[40px] rounded-full flex justify-center items-center right-[30px] bottom-[30px] z-[666] shadow-[0_0_9px_0_#fff]">
+        2
+    </a>
+
+    <header class="bg-black">
+        <nav class="bg-gradient-to-bl from-[rgba(0,255,163,0.2)] to-[rgba(31,26,255,0.2)]">
+            <nav class="container2 py-[13px] flex justify-between items-center">
+                <nav class="flex justify-start items-center gap-[30px]">
+                    <a href="./index.html">
+                        <img src="./assets/img/logo.png" alt="">
+                    </a>
+
+                    <label for="nav" class="text-[#fff] text-[25px] hidden max-[1010px]:block">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+
+                    <input type="checkbox" id="nav" class="hidden">
+                    <ul
+                        class="flex justify-center items-center gap-[35px] max-[1010px]:fixed max-[1010px]:left-[-100%] max-[1010px]:top-0 max-[1010px]:z-[888] max-[1010px]:h-[100vh] max-[1010px]:w-[50%] max-[1010px]:bg-[#fff] max-[1010px]:p-[20px] max-[1010px]:flex-col max-[1010px]:justify-center max-[1010px]:items-start] max-[600px]:w-full">
+
+                        <label for="nav" class="absolute right-[30px] top-[20px] text-[25px] hidden max-[1010px]:block">
+                            <i class="fa-solid fa-xmark"></i>
+                        </label>
+
+                        <li><a href="#!"
+                                class="text-[rgba(255,255,255,0.42)] hover:text-[#fff] max-[1010px]:text-[#000] max-[1010px]:hover:text-[#000]">Функции</a>
+                        </li>
+                        <li><a href="#!"
+                                class="text-[rgba(255,255,255,0.42)] hover:text-[#fff] max-[1010px]:text-[#000] max-[1010px]:hover:text-[#000]">Кошельки</a>
+                        </li>
+                        <li><a href="#!"
+                                class="text-[rgba(255,255,255,0.42)] hover:text-[#fff] max-[1010px]:text-[#000] max-[1010px]:hover:text-[#000]">Участие</a>
+                        </li>
+                        <li><a href="#!"
+                                class="text-[rgba(255,255,255,0.42)] hover:text-[#fff] max-[1010px]:text-[#000] max-[1010px]:hover:text-[#000]">Ресурсы</a>
+                        </li>
+                        <li><a href="#!"
+                                class="text-[rgba(255,255,255,0.42)] hover:text-[#fff] max-[1010px]:text-[#000] max-[1010px]:hover:text-[#000]">Новости</a>
+                        </li>
+                        <li><a href="#!"
+                                class="text-[rgba(255,255,255,0.42)] hover:text-[#fff] max-[1010px]:text-[#000] max-[1010px]:hover:text-[#000]">О
+                                BTCA</a></li>
+                    </ul>
+
+                    <label for="nav"
+                        class="bg-blur hidden h-[100vh] w-full fixed left-0 top-0 bg-[#0000006e] backdrop-blur-[4px] z-[777]"></label>
+                </nav>
+
+                <nav class="flex justify-end items-center gap-[10px]">
+                    <div
+                        class="max-[345px]:hidden border border-[#fff] cursor-pointer text-[#fff] active:scale-[.97] select-none flex justify-center items-center p-[6px_10px] rounded-lg shadow-[0_4px_9px_0_rgba(176,176,176,0.1)] bg-[rgba(255,255,255,0.15)] backdrop-blur-[8px]">
+                        <p class="flex justify-center items-center gap-[4px]">
+                            <img src="./assets/svg/globe.svg" alt="">
+
+                            RUS
+                        </p>
+                    </div>
+
+                    <div
+                        class="border gap-[4px] border-[#fff] cursor-pointer text-[#fff] active:scale-[.97] select-none flex justify-center items-center p-[6px_10px] rounded-lg shadow-[0_4px_9px_0_rgba(176,176,176,0.1)] bg-[rgba(255,255,255,0.15)] backdrop-blur-[8px]">
+                        <div class="p-[2px] rounded-full bg-[#ff9c27]">
+                            <img src="./assets/svg/dollor.svg" alt="">
+                        </div>
+                        <p>10.834</p>
+                    </div>
+                </nav>
+
+            </nav>
+        </nav>
+    </header>
+
+    <div class="bg-[url(../assets/img/bg.png)]  bg-no-repeat bg-center bg-cover">
+        <section class="flex items-center relative py-[8rem]">
+
+            <img src="./assets/img/moon.png" alt=""
+                class="absolute right-0 z-[1] opacity-40 h-[500px] max-[690px]:hidden">
+
+            <div
+                class="container2 z-10 flex justify-around items-center w-full max-[690px]:flex-col max-[690px]:gap-[40px]">
+
+                <div
+                    class="flex flex-col justify-center items-start gap-[15px] w-[48%] max-[1200px]:w-[55%] max-[900px]:w-[70%] max-[690px]:text-center max-[690px]:w-full">
+                    <h1
+                        class="text-bg leading-[109%] text-[50px] font-[800] max-[1080px]:text-[40px] max-[510px]:text-[30px]">
+                        Становитесь своим собственным банком
+                    </h1>
+
+                    <p class="leading-[178%] font-[500] text-[#fff] max-[510px]:font-[400]">
+                        Получите свободу, благодаря конфиденциальным, глобальным цифровым деньгам. Становитесь своим
+                        собственным банком с полным
+                        контролем над своими цифровыми активами.
+                    </p>
+                </div>
+
+                <div>
+                    <img src="./assets/img/showcase.png" alt="" class="max-[1200px]:h-[300px] max-[900px]:h-[200px]">
+                </div>
+            </div>
+        </section>
+
+        <section class="py-[40px]">
+            <div class="container2">
+
+
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div
+                                class="flex flex-col justify-start items-start h-[450px] gap-[15px] relative bg-[#151822] text-[#fff] p-[25px] rounded-lg">
+                                <p>Быстро. Доступно. Безопасно</p>
+
+                                <h1 class="font-[600] text-[30px] leading-[109%]">Глобальные транзакции</h1>
+
+                                <p class="font-[200]">
+                                    An improbable, overnight rise has established a new token as a blockchain gaming
+                                    heavyweight.
+                                </p>
+
+                                <a href="#!"
+                                    class="p-[15px_30px] mt-[10px] rounded-xl bg-[#1d9a6d] z-10 shadow-[0_8px_16px_0_rgba(75,72,241,0.19)] active:scale-[.97]">
+                                    Перейти и получить
+                                </a>
+
+                                <img src="./assets/img/card1.png" alt="" class="absolute right-0 bottom-0 opacity-70">
+                            </div>
+                        </div>
+
+                        <!-- 2 -->
+                        <div class="swiper-slide">
+                            <div
+                                class="flex flex-col justify-start items-start h-[450px] gap-[15px] relative bg-[#151822] text-[#fff] p-[25px] rounded-lg">
+                                <p>Помогите зашитить сеть</p>
+
+                                <h1 class="font-[600] text-[30px] leading-[109%]">И получите вознаграждение</h1>
+
+                                <p class="font-[200]">
+                                    An improbable, overnight rise has established a new token as a blockchain gaming
+                                    heavyweight.
+                                </p>
+
+                                <a href="#!"
+                                    class="p-[15px_30px] mt-[10px] rounded-xl bg-[#1d9a6d] z-10 shadow-[0_8px_16px_0_rgba(75,72,241,0.19)] active:scale-[.97]">
+                                    Перейти и получить
+                                </a>
+
+                                <img src="./assets/img/card2.png" alt="" class="absolute right-0 bottom-0 opacity-70">
+                            </div>
+                        </div>
+
+                        <!-- 3 -->
+                        <div class="swiper-slide">
+                            <div
+                                class="flex flex-col justify-start items-start h-[450px] gap-[15px] relative bg-[#151822] text-[#fff] p-[25px] rounded-lg">
+                                <p>Защитите свои активы</p>
+
+                                <h1 class="font-[600] text-[30px] leading-[109%]">Секретных транзакций</h1>
+
+                                <p class="font-[200]">
+                                    An improbable, overnight rise has established a new token as a blockchain gaming
+                                    heavyweight.
+                                </p>
+
+                                <a href="#!"
+                                    class="p-[15px_30px] mt-[10px] rounded-xl bg-[#1d9a6d] z-10 shadow-[0_8px_16px_0_rgba(75,72,241,0.19)] active:scale-[.97]">
+                                    Перейти и получить
+                                </a>
+
+                                <img src="./assets/img/card3.png" alt="" class="absolute right-0 bottom-0 opacity-70">
+                            </div>
+                        </div>
+
+                        <!-- 4 -->
+                        <div class="swiper-slide">
+                            <div
+                                class="flex flex-col justify-start items-start h-[450px] gap-[15px] relative bg-[#151822] text-[#fff] p-[25px] rounded-lg">
+                                <p>Быстро. Доступно. Безопасно</p>
+
+                                <h1 class="font-[600] text-[30px] leading-[109%]">Глобальные транзакции</h1>
+
+                                <p class="font-[200]">
+                                    An improbable, overnight rise has established a new token as a blockchain gaming
+                                    heavyweight.
+                                </p>
+
+                                <a href="#!"
+                                    class="p-[15px_30px] mt-[10px] rounded-xl bg-[#1d9a6d] z-10 shadow-[0_8px_16px_0_rgba(75,72,241,0.19)] active:scale-[.97]">
+                                    Перейти и получить
+                                </a>
+
+                                <img src="./assets/img/card2.png" alt="" class="absolute right-0 bottom-0 opacity-70">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="mt-[30px] flex justify-center items-center gap-[20px]">
+                    <div
+                        class="swiper-prev select-none p-[5px] h-[50px] w-[50px] shadow-[0_4px_21px_0_rgba(0,0,0,0.59)] flex justify-center items-center rounded-full border border-[rgba(255,255,255,0.11)] cursor-pointer bg-[#0d111b] active:scale-[.97] hover:bg-[#080c13]">
+                        <img src="./assets/svg/left.svg" alt="">
+                    </div>
+
+                    <div
+                        class="swiper-next select-none p-[5px] h-[50px] w-[50px] shadow-[0_4px_21px_0_rgba(0,0,0,0.59)] flex justify-center items-center rounded-full border border-[rgba(255,255,255,0.11)] cursor-pointer bg-[#0d111b] active:scale-[.97] hover:bg-[#080c13]">
+                        <img src="./assets/svg/right.svg" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <section class="py-[40px] bg-[#0d111b] relative flex justify-center">
+
+        <h1
+            class="absolute left-0 font-[700] text-[130px] leading-[109%] text-[#99999998] z-[1] opacity-10 max-[750px]:text-[100px] max-[555px]:text-[60px] max-[660px]:left-auto max-[335px]:text-[40px]">
+            ПАРТНЕРЫ
+        </h1>
+
+        <div class="container2 flex justify-between items-center max-[660px]:flex-col max-[660px]:gap-[30px] z-[10]">
+            <div
+                class="flex flex-col justify-start items-start gap-[20px] w-[50%] max-[660px]:w-full max-[660px]:text-center z-10">
+                <h1
+                    class="text-bg font-[600] text-[40px] leading-[107%] max-[900px]:text-[30px] max-[660px]:w-full max-[335px]:text-[25px]">
+                    Нас поддерживают
+                </h1>
+
+                <p class="text-[#fff] leading-[170%] font-[300]">
+                    Получите свободу, благодаря конфиденциальным <span class="max-[335px]:hidden">, глобальным цифровым
+                        деньгам. Становитесь своим
+                        собственным банком с полным
+                        контролем над своими цифровыми активами.</span>
+                </p>
+
+                <div
+                    class="flex justify-between items-center p-[8px_10px] w-[80%] bg-[#151822] rounded-lg max-[660px]:hidden">
+                    <div class="flex flex-col justify-center items-start">
+                        <span class="bg-[#1a204a] rounded-2xl text-[12px] text-[#fff] p-[3px_15px]">TIPS</span>
+                        <p class="text-[#fff]">Swap to see more</p>
+                    </div>
+
+                    <img src="./assets/svg/swipe.svg" alt="">
+                </div>
+            </div>
+
+            <div class="flex justify-center items-center w-[36%] max-[660px]:w-[60%] max-[450px]:w-[80%]">
+                <img src="./assets/img/sponsors.png" alt="">
+            </div>
+
+            <div
+                class="justify-between items-center p-[8px_10px] w-[80%] bg-[#151822] rounded-lg hidden max-[660px]:flex max-[335px]:w-full">
+                <div class="flex flex-col justify-center items-start">
+                    <span class="bg-[#1a204a] rounded-2xl text-[12px] text-[#fff] p-[3px_15px]">TIPS</span>
+                    <p class="text-[#fff]">Swap to see more</p>
+                </div>
+
+                <img src="./assets/svg/swipe.svg" alt="">
+            </div>
+        </div>
+
+    </section>
+
+    <section class="py-[40px] bg-[url(../assets/img/bg-2.png)]  bg-no-repeat bg-center bg-cover">
+        <div class="container2 flex justify-between items-center max-[680px]:flex-col max-[680px]:gap-[30px]">
+
+            <div
+                class="flex flex-col justify-start items-start gap-[20px] w-[40%] max-[680px]:w-full max-[660px]:text-center">
+                <h1
+                    class="text-bg font-[600] text-[40px] leading-[107%] max-[900px]:text-[30px] max-[660px]:w-full max-[335px]:text-[25px]">
+                    Кошелек и Инструменты
+                </h1>
+
+                <p class="text-[#fff] leading-[170%] font-[300]">
+                    BTCA предоставляет вам инструменты и ресурсы, чтобы вы всегда могли контролировать свои средства.
+                </p>
+
+                <div class="flex justify-start items-center gap-[20px] max-[680px]:self-center">
+                    <img src="./assets/svg/1.svg" alt="" class="cursor-pointer">
+                    <img src="./assets/svg/2.svg" alt="" class="cursor-pointer">
+                    <img src="./assets/svg/3.svg" alt="" class="cursor-pointer">
+                    <img src="./assets/svg/4.svg" alt="" class="cursor-pointer">
+                </div>
+
+                <a href="#!"
+                    class="bg-[rgba(98,127,227,0.15)] max-[680px]:self-center rounded-xl flex justify-center items-center text-[#fff] active:scale-[.98] gap-[10px] p-[10px_20px]">
+                    <img src="./assets/svg/2.svg" alt="" class="w-[15px] object-contain">
+                    Скачать кошелек
+                </a>
+            </div>
+
+            <div class="flex justify-center items-center w-[40%] max-[680px]:w-[70%]">
+                <img src="./assets/img/device.png" alt="">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-[40px] pt-[80px] relative flex justify-center bg-[#0d111b]">
+        <h1
+            class="absolute font-[700] top-0 text-[130px] leading-[109%] text-[#99999998] z-[1] opacity-10 max-[750px]:text-[100px] max-[555px]:text-[60px] max-[335px]:text-[40px]">
+            Ready?
+        </h1>
+        <div class="container2 flex flex-col gap-[50px]">
+
+            <div
+                class="flex flex-col justify-center items-center gap-[15px] w-[42%] text-[#fff] m-auto max-[1111px]:w-[60%] max-[700px]:w-full">
+                <h1
+                    class="text-bg font-[600] text-[40px] leading-[107%] max-[900px]:text-[30px] text-center max-[335px]:text-[25px]">
+                    Готовы начать?
+                </h1>
+
+                <p class="leading-[180%] font-[300] text-center">
+                    Независимо от того, являетесь ли вы разработчиком, мерчантом, конечным пользователем или покупателем
+                    окон, мы
+                    приветствуем вас в сообществе BTCA.
+                </p>
+
+            </div>
+
+
+            <div class="grid grid-cols-3 gap-[25px] max-[1111px]:grid-cols-2 max-[735px]:grid-cols-1">
+
+                <div
+                    class="flex flex-col justify-between gap-[12px] p-[23px_0px_23px_30px] bg-[#151822] rounded-lg text-[#fff] relative">
+
+                    <div class="flex justify-between items-center w-full">
+                        <p>1 шаг</p>
+
+                        <span class="h-[1px] bg-[#ffffff41] w-[80%] max-[350px]:w-[70%]"></span>
+                    </div>
+
+                    <h1 class="text-[30px] font-[700] leading-[109%] max-[1315px]:text-[22px]">
+                        Скачайте <br> приложение
+                    </h1>
+
+                    <a href="#!"
+                        class="self-start p-[12px_25px] mt-[30px] rounded-xl bg-[#1d9a6d] z-10 shadow-[0_8px_16px_0_rgba(75,72,241,0.19)] active:scale-[.97]">
+                        Перейти
+                    </a>
+
+                    <img src="./assets/img/step1.png" alt=""
+                        class="absolute bottom-0 right-0 max-[1315px]:h-[130px] max-[350px]:h-[100px]">
+
+                </div>
+
+                <!-- 2 -->
+                <div
+                    class="flex flex-col justify-between gap-[12px] p-[23px_0px_23px_30px] bg-[#151822] rounded-lg text-[#fff] relative">
+
+                    <div class="flex justify-between items-center w-full">
+                        <p>2 шаг</p>
+
+                        <span class="h-[1px] bg-[#ffffff41] w-[80%] max-[350px]:w-[70%]"></span>
+                    </div>
+
+                    <h1 class="text-[30px] font-[700] leading-[109%] max-[1315px]:text-[22px]">
+                        Регестрируйтесь
+                    </h1>
+
+                    <a href="#!"
+                        class="self-start p-[12px_25px] mt-[30px] rounded-xl bg-[#1d9a6d] z-10 shadow-[0_8px_16px_0_rgba(75,72,241,0.19)] active:scale-[.97]">
+                        Перейти
+                    </a>
+
+                    <img src="./assets/img/step2.png" alt=""
+                        class="absolute bottom-0 right-0 max-[1315px]:h-[130px] max-[350px]:h-[100px]">
+
+                </div>
+
+                <!-- 3 -->
+                <div
+                    class="flex flex-col justify-between gap-[12px] p-[23px_0px_23px_30px] bg-[#151822] rounded-lg text-[#fff] relative">
+
+                    <div class="flex justify-between items-center w-full">
+                        <p>3 шаг</p>
+
+                        <span class="h-[1px] bg-[#ffffff41] w-[80%] max-[350px]:w-[70%]"></span>
+                    </div>
+
+                    <h1 class="text-[30px] font-[700] leading-[109%] max-[1315px]:text-[22px]">
+                        Пользуйтесь
+                    </h1>
+
+                    <a href="#!"
+                        class="self-start p-[12px_25px] mt-[30px] rounded-xl bg-[#1d9a6d] z-10 shadow-[0_8px_16px_0_rgba(75,72,241,0.19)] active:scale-[.97]">
+                        Перейти
+                    </a>
+
+                    <img src="./assets/img/step3.png" alt=""
+                        class="absolute bottom-0 right-0 max-[1315px]:h-[130px] max-[350px]:h-[100px]">
+
+                </div>
+
+            </div>
+
+
+            <div
+                class="bg-[url(../assets/img/bg.png)]  bg-no-repeat bg-center bg-cover rounded-[28px] max-[530px]:p-[20px] max-[840px]:text-center max-[840px]:items-center text-[#fff] p-[70px_50px] flex flex-col justify-between items-start gap-[16px]">
+
+                <h1
+                    class="text-bg font-[600] text-[40px] leading-[107%] max-[900px]:text-[30px]  max-[530px]:text-[25px]">
+                    Никогда не пропускайте обновления
+                </h1>
+
+                <p class="w-[50%] max-[840px]:w-full max-[460px]:text-[14px]">
+                    Подпишитесь на информационный бюллетень и будьте первым, кто получит новейшие оповещения, объявления
+                    и обновления о
+                    разработках BTCA.
+                </p>
+
+                <form
+                    class="backdrop-blur-[4px] shadow-[0_4px_41px_0_rgba(0,0,0,0.13)] w-[50%] bg-[rgba(255,255,255,0.1)] max-[465px]:w-full h-[45px] rounded-xl flex justify-between items-center gap-[20px] p-[10px] max-[840px]:w-[90%]">
+                    <input type="text" placeholder="Ваш e-mail" class="w-full bg-transparent outline-none border-none">
+
+                    <button
+                        class="p-[5px_15px] rounded-full bg-[#1d9a6d] z-10 shadow-[0_8px_16px_0_rgba(75,72,241,0.19)] active:scale-[.97]">Подписаться</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer class="pt-[40px] bg-[#151822] text-[#fff]">
+        <div class="container2">
+            <div class="grid grid-cols-4 gap-[30px] max-[930px]:grid-cols-2 max-[555px]:gap-[10px] max-[470px]:grid-cols-1 max-[470px]:gap-[30px]">
+
+                <div class="flex flex-col gap-[10px] justify-start items-start max-[930px]:order-5">
+                    <h1 class="text-[30px]">rovac</h1>
+
+                    <div class="flex justify-start items-center gap-[10px]">
+                        <img src="./assets/svg/1.svg" alt="" class="h-[20px] cursor-pointer">
+                        <img src="./assets/svg/2.svg" alt="" class="h-[20px] cursor-pointer">
+                        <img src="./assets/svg/3.svg" alt="" class="h-[20px] cursor-pointer">
+                        <img src="./assets/svg/4.svg" alt="" class="h-[20px] cursor-pointer">
+                    </div>
+
+                    <p class="font-[200] text-[14px]">
+                        BTCA - это децентрализованная, одноранговая валюта с открытым исходным кодом, отличающаяся
+                        расширенными функциями
+                        конфиденциальности
+                    </p>
+                </div>
+
+                <div class="felx flex-col justify-start items-start">
+                    <h1 class="text-[23px] font-[600] mb-[20px] max-[470px]:mb-[15px] max-[470px]:text-[20px]">BTCA</h1>
+
+                    <ul class="flex flex-col justify-start items-start gap-[10px]">
+                        <li class="text-[15px] opacity-75 font-[200] hover:opacity-100"><a href="#!">Получить PIV</a>
+                        </li>
+                        <li class="text-[15px] opacity-75 font-[200] hover:opacity-100"><a
+                                href="">Конфиденциальность</a></li>
+                        <li class="text-[15px] opacity-75 font-[200] hover:opacity-100"><a href="#!">Продвинутый PoS</a>
+                        </li>
+                        <li class="text-[15px] opacity-75 font-[200] hover:opacity-100"><a href="#!">Холодный
+                                Стекинг</a>
+                        </li>
+                        <li class="text-[15px] opacity-75 font-[200] hover:opacity-100"><a href="#!">Мастерноды</a></li>
+                        <li class="text-[15px] opacity-75 font-[200] hover:opacity-100"><a href="#!">Управление</a></li>
+                    </ul>
+                </div>
+
+                <div class="felx flex-col justify-start items-start">
+                    <h1 class="text-[23px] font-[600] mb-[20px] max-[470px]:mb-[15px] max-[470px]:text-[20px]">Ресурсы</h1>
+
+                    <ul class="flex flex-col justify-start items-start gap-[10px]">
+                        <li class="text-[15px] opacity-75 font-[200] hover:opacity-100"><a href="#!">Кошельки</a></li>
+                        <li class="text-[15px] opacity-75 font-[200] hover:opacity-100"><a href="#!">Coin Specs</a></li>
+                        <li class="text-[15px] opacity-75 font-[200] hover:opacity-100"><a href="#!">Statistics</a></li>
+                        <li class="text-[15px] opacity-75 font-[200] hover:opacity-100"><a href="#!">Инфопанель</a></li>
+                        <li class="text-[15px] opacity-75 font-[200] hover:opacity-100"><a href="#!">Новости</a></li>
+                        <li class="text-[15px] opacity-75 font-[200] hover:opacity-100"><a href="#!">Дорожная Карта</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="felx flex-col justify-start items-start">
+                    <h1 class="text-[23px] font-[600] mb-[20px] max-[470px]:mb-[15px] max-[470px]:text-[20px]">Поддержка</h1>
+
+                    <ul class="flex flex-col justify-start items-start gap-[10px]">
+                        <li class="text-[15px] opacity-75 font-[200] hover:opacity-100"><a href="#!">Руководства</a>
+                        </li>
+                        <li class="text-[15px] opacity-75 font-[200] hover:opacity-100"><a href="#!">Форум</a></li>
+                        <li class="text-[15px] opacity-75 font-[200] hover:opacity-100"><a href="#!">Почему BTCA</a>
+                        </li>
+                        <li class="text-[15px] opacity-75 font-[200] hover:opacity-100"><a href="#!">Контакты</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container2">
+            <div class="border-t border-[#0d111b] mt-[28px] w-full flex justify-between py-[15px] max-[630px]:flex-col max-[630px]:justify-center max-[630px]:items-center max-[630px]:gap-[10px] max-[630px]:text-center">
+
+                <p class="text-[13px] opacity-60 font-[100]">© 2019-2021 BTCA Community & BTCA Foundation</p>
+                <p class="text-[13px] opacity-60 font-[100]">Created by BTCA Community</p>
+
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>

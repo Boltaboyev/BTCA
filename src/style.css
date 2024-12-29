@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: "Inter", serif;
+    transition: 0.2s;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container2 {
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+@media (min-width: 1400px) {
+    .container2 {
+        max-width: 1200px;
+    }
+}
+
+#nav + ul {
+    transition: 0.4s;
+}
+
+#nav:checked + ul {
+    left: 0;
+}
+
+#nav:checked ~ .bg-blur {
+    display: block;
+}
+
+.text-bg {
+    background: linear-gradient(138deg, #fff 0%, #b0faff7a 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #010b29;
+}
