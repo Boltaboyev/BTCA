@@ -11,6 +11,42 @@ body {
     overflow-x: hidden;
 }
 
+
+.loader {
+    height: 110vh !important;
+    width: 100%;
+    background: #1a1919;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    opacity: 1;
+    transition: 0.5s;
+    z-index: 1000;
+}
+
+.loader img {
+    width: 60px;
+    animation: name 8s infinite alternate-reverse linear;
+}
+
+.loader_active {
+    opacity: 0;
+}
+
+@keyframes name {
+    from {
+        transform: rotateY(5turn);
+    }
+
+    to {
+        transform: rotateY(0turn);
+    }
+}
+
+
 .container2 {
     max-width: 85%;
     margin: 0 auto;
@@ -22,15 +58,15 @@ body {
     }
 }
 
-#nav + ul {
+#nav+ul {
     transition: 0.4s;
 }
 
-#nav:checked + ul {
+#nav:checked+ul {
     left: 0;
 }
 
-#nav:checked ~ .bg-blur {
+#nav:checked~.bg-blur {
     display: block;
 }
 

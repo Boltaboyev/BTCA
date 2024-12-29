@@ -16,11 +16,18 @@
 
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
 
-    <a href="./js-task/index.html" class="fixed bg-[#fff] h-[40px] w-[40px] rounded-full flex justify-center items-center right-[30px] bottom-[30px] z-[666] shadow-[0_0_9px_0_#fff]">
+    <div class="loader h-[100vh] w-full fixed top-0 left-0 z-[1000] bg-[#0d111b] flex justify-center items-center">
+        <img src="./assets/img/logo.png" alt="">
+    </div>
+
+    <a href="./js-task/index.html"
+        class="fixed bg-[#fff] h-[40px] w-[40px] rounded-full flex justify-center items-center right-[30px] bottom-[30px] z-[666] shadow-[0_0_9px_0_#fff]">
         2
     </a>
 
@@ -97,10 +104,10 @@
             <img src="./assets/img/moon.png" alt=""
                 class="absolute right-0 z-[1] opacity-40 h-[500px] max-[690px]:hidden">
 
-            <div
+            <div 
                 class="container2 z-10 flex justify-around items-center w-full max-[690px]:flex-col max-[690px]:gap-[40px]">
 
-                <div
+                <div data-aos="fade-right"
                     class="flex flex-col justify-center items-start gap-[15px] w-[48%] max-[1200px]:w-[55%] max-[900px]:w-[70%] max-[690px]:text-center max-[690px]:w-full">
                     <h1
                         class="text-bg leading-[109%] text-[50px] font-[800] max-[1080px]:text-[40px] max-[510px]:text-[30px]">
@@ -114,7 +121,7 @@
                     </p>
                 </div>
 
-                <div>
+                <div data-aos="fade-left">
                     <img src="./assets/img/showcase.png" alt="" class="max-[1200px]:h-[300px] max-[900px]:h-[200px]">
                 </div>
             </div>
@@ -129,7 +136,7 @@
                     <div class="swiper-wrapper">
 
                         <div class="swiper-slide">
-                            <div
+                            <div  data-aos="fade-up"
                                 class="flex flex-col justify-start items-start h-[450px] gap-[15px] relative bg-[#151822] text-[#fff] p-[25px] rounded-lg">
                                 <p>Быстро. Доступно. Безопасно</p>
 
@@ -151,7 +158,7 @@
 
                         <!-- 2 -->
                         <div class="swiper-slide">
-                            <div
+                            <div data-aos="fade-up"
                                 class="flex flex-col justify-start items-start h-[450px] gap-[15px] relative bg-[#151822] text-[#fff] p-[25px] rounded-lg">
                                 <p>Помогите зашитить сеть</p>
 
@@ -169,11 +176,11 @@
 
                                 <img src="./assets/img/card2.png" alt="" class="absolute right-0 bottom-0 opacity-70">
                             </div>
-                        </div>
+                        </div> 
 
                         <!-- 3 -->
                         <div class="swiper-slide">
-                            <div
+                            <div data-aos="fade-up"
                                 class="flex flex-col justify-start items-start h-[450px] gap-[15px] relative bg-[#151822] text-[#fff] p-[25px] rounded-lg">
                                 <p>Защитите свои активы</p>
 
@@ -191,11 +198,11 @@
 
                                 <img src="./assets/img/card3.png" alt="" class="absolute right-0 bottom-0 opacity-70">
                             </div>
-                        </div>
+                        </div> 
 
                         <!-- 4 -->
                         <div class="swiper-slide">
-                            <div
+                            <div data-aos="fade-up"
                                 class="flex flex-col justify-start items-start h-[450px] gap-[15px] relative bg-[#151822] text-[#fff] p-[25px] rounded-lg">
                                 <p>Быстро. Доступно. Безопасно</p>
 
@@ -213,7 +220,7 @@
 
                                 <img src="./assets/img/card2.png" alt="" class="absolute right-0 bottom-0 opacity-70">
                             </div>
-                        </div>
+                        </div> 
 
                     </div>
                 </div>
@@ -236,13 +243,13 @@
 
     <section class="py-[40px] bg-[#0d111b] relative flex justify-center">
 
-        <h1
+        <h1 
             class="absolute left-0 font-[700] text-[130px] leading-[109%] text-[#99999998] z-[1] opacity-10 max-[750px]:text-[100px] max-[555px]:text-[60px] max-[660px]:left-auto max-[335px]:text-[40px]">
             ПАРТНЕРЫ
         </h1>
 
-        <div class="container2 flex justify-between items-center max-[660px]:flex-col max-[660px]:gap-[30px] z-[10]">
-            <div
+        <div  class="container2 flex justify-between items-center max-[660px]:flex-col max-[660px]:gap-[30px] z-[10]">
+            <div data-aos="fade-right"
                 class="flex flex-col justify-start items-start gap-[20px] w-[50%] max-[660px]:w-full max-[660px]:text-center z-10">
                 <h1
                     class="text-bg font-[600] text-[40px] leading-[107%] max-[900px]:text-[30px] max-[660px]:w-full max-[335px]:text-[25px]">
@@ -267,7 +274,7 @@
                 </div>
             </div>
 
-            <div class="flex justify-center items-center w-[36%] max-[660px]:w-[60%] max-[450px]:w-[80%]">
+            <div class="flex justify-center items-center w-[36%] max-[660px]:w-[60%] max-[450px]:w-[80%]" data-aos="fade-left">
                 <img src="./assets/img/sponsors.png" alt="">
             </div>
 
@@ -287,7 +294,7 @@
     <section class="py-[40px] bg-[url(../assets/img/bg-2.png)]  bg-no-repeat bg-center bg-cover">
         <div class="container2 flex justify-between items-center max-[680px]:flex-col max-[680px]:gap-[30px]">
 
-            <div
+            <div data-aos="fade-up-right"
                 class="flex flex-col justify-start items-start gap-[20px] w-[40%] max-[680px]:w-full max-[660px]:text-center">
                 <h1
                     class="text-bg font-[600] text-[40px] leading-[107%] max-[900px]:text-[30px] max-[660px]:w-full max-[335px]:text-[25px]">
@@ -312,7 +319,7 @@
                 </a>
             </div>
 
-            <div class="flex justify-center items-center w-[40%] max-[680px]:w-[70%]">
+            <div data-aos="fade-up-left" class="flex justify-center items-center w-[40%] max-[680px]:w-[70%]">
                 <img src="./assets/img/device.png" alt="">
             </div>
 
@@ -320,13 +327,13 @@
     </section>
 
     <section class="py-[40px] pt-[80px] relative flex justify-center bg-[#0d111b]">
-        <h1
+        <h1 
             class="absolute font-[700] top-0 text-[130px] leading-[109%] text-[#99999998] z-[1] opacity-10 max-[750px]:text-[100px] max-[555px]:text-[60px] max-[335px]:text-[40px]">
             Ready?
         </h1>
         <div class="container2 flex flex-col gap-[50px]">
 
-            <div
+            <div data-aos="fade-up"
                 class="flex flex-col justify-center items-center gap-[15px] w-[42%] text-[#fff] m-auto max-[1111px]:w-[60%] max-[700px]:w-full">
                 <h1
                     class="text-bg font-[600] text-[40px] leading-[107%] max-[900px]:text-[30px] text-center max-[335px]:text-[25px]">
@@ -344,7 +351,7 @@
 
             <div class="grid grid-cols-3 gap-[25px] max-[1111px]:grid-cols-2 max-[735px]:grid-cols-1">
 
-                <div
+                <div data-aos="zoom-in"
                     class="flex flex-col justify-between gap-[12px] p-[23px_0px_23px_30px] bg-[#151822] rounded-lg text-[#fff] relative">
 
                     <div class="flex justify-between items-center w-full">
@@ -368,7 +375,7 @@
                 </div>
 
                 <!-- 2 -->
-                <div
+                <div data-aos="zoom-in"
                     class="flex flex-col justify-between gap-[12px] p-[23px_0px_23px_30px] bg-[#151822] rounded-lg text-[#fff] relative">
 
                     <div class="flex justify-between items-center w-full">
@@ -392,7 +399,7 @@
                 </div>
 
                 <!-- 3 -->
-                <div
+                <div data-aos="zoom-in"
                     class="flex flex-col justify-between gap-[12px] p-[23px_0px_23px_30px] bg-[#151822] rounded-lg text-[#fff] relative">
 
                     <div class="flex justify-between items-center w-full">
@@ -447,7 +454,8 @@
 
     <footer class="pt-[40px] bg-[#151822] text-[#fff]">
         <div class="container2">
-            <div class="grid grid-cols-4 gap-[30px] max-[930px]:grid-cols-2 max-[555px]:gap-[10px] max-[470px]:grid-cols-1 max-[470px]:gap-[30px]">
+            <div
+                class="grid grid-cols-4 gap-[30px] max-[930px]:grid-cols-2 max-[555px]:gap-[10px] max-[470px]:grid-cols-1 max-[470px]:gap-[30px]">
 
                 <div class="flex flex-col gap-[10px] justify-start items-start max-[930px]:order-5">
                     <h1 class="text-[30px]">rovac</h1>
@@ -485,7 +493,8 @@
                 </div>
 
                 <div class="felx flex-col justify-start items-start">
-                    <h1 class="text-[23px] font-[600] mb-[20px] max-[470px]:mb-[15px] max-[470px]:text-[20px]">Ресурсы</h1>
+                    <h1 class="text-[23px] font-[600] mb-[20px] max-[470px]:mb-[15px] max-[470px]:text-[20px]">Ресурсы
+                    </h1>
 
                     <ul class="flex flex-col justify-start items-start gap-[10px]">
                         <li class="text-[15px] opacity-75 font-[200] hover:opacity-100"><a href="#!">Кошельки</a></li>
@@ -500,7 +509,8 @@
 
 
                 <div class="felx flex-col justify-start items-start">
-                    <h1 class="text-[23px] font-[600] mb-[20px] max-[470px]:mb-[15px] max-[470px]:text-[20px]">Поддержка</h1>
+                    <h1 class="text-[23px] font-[600] mb-[20px] max-[470px]:mb-[15px] max-[470px]:text-[20px]">Поддержка
+                    </h1>
 
                     <ul class="flex flex-col justify-start items-start gap-[10px]">
                         <li class="text-[15px] opacity-75 font-[200] hover:opacity-100"><a href="#!">Руководства</a>
@@ -516,7 +526,8 @@
         </div>
 
         <div class="container2">
-            <div class="border-t border-[#0d111b] mt-[28px] w-full flex justify-between py-[15px] max-[630px]:flex-col max-[630px]:justify-center max-[630px]:items-center max-[630px]:gap-[10px] max-[630px]:text-center">
+            <div
+                class="border-t border-[#0d111b] mt-[28px] w-full flex justify-between py-[15px] max-[630px]:flex-col max-[630px]:justify-center max-[630px]:items-center max-[630px]:gap-[10px] max-[630px]:text-center">
 
                 <p class="text-[13px] opacity-60 font-[100]">© 2019-2021 BTCA Community & BTCA Foundation</p>
                 <p class="text-[13px] opacity-60 font-[100]">Created by BTCA Community</p>
@@ -528,6 +539,7 @@
 
 
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./app.js"></script>
